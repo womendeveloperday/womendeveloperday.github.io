@@ -65,7 +65,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand" href="#" rel="nofollow"><img class="pull-left" src="images/womanlogo.jpg" height="100px" alt="logo"/><h3>PAUFSC / WOMAN DEVELOPERs DAY</h3></a>
+                                <a class="navbar-brand" href="#" rel="nofollow"><img class="pull-left" src="images/womanlogo.jpg" height="100px" alt="logo"/><h3>PAUFSC / WOMAN DEVELOPERS DAY</h3></a>
                         </div>
                         <div class="navbar-collapse collapse" id="templatemo-nav-bar">
                             <ul class="nav navbar-nav navbar-right" style="margin-top: 40px;">
@@ -94,7 +94,7 @@
                     <div class="item active">
                         <div class="container">
                             <div class="carousel-caption" style="background:rgba(0,0,0,0.5);">
-                                <h1>WOMaN DEVELOPERS DAY</h1>
+                                <h1>WOMAN DEVELOPERS DAY</h1>
                                 <p>YER : PAMUKKALE ÜNİVERSİTESİ KAMPÜSÜ</p>
                                 <p>TARİH : 03 MAYIS 2014</p>
                                 <p id="timeleft">Time Released!</p>
@@ -698,13 +698,15 @@
             $(document).ready(function() {
                 $("#btn-back-to-top").click(function(event) {
                     event.preventDefault();
-
-                });
-                    austDay = new Date("2014 5 3");
-                    $('#timeleft').countdown({until: austDay});
+                     $('html, body').stop().animate({
+                     scrollTop: 0
+                     }, 2000);
+                    
                     // $('#year').text(austDay.getFullYear());
                 });
-
+                austDay = new Date("2014 5 3");
+                    $('#timeleft').countdown({until: austDay});
+            });
         </script>
     <script type='text/javascript' src='js/logging.js'></script>
 </body>
